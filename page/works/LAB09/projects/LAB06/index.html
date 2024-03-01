@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab06</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header class="header" id="myTopnav">
+        <div class="logo">
+            <a href="#home"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="series.html">Series</a></li>
+                <li><a href="#about">About</a></li><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a></li>
+                <li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <div class="bg img1"></div>
+
+    <section class="content" id="home">
+        <h1>Movies & Series</h1>
+        <div class="card">
+            <a href="movies.html">
+                <div class="box box1">
+                    <h2>Movies</h2>
+                </div>
+            </a>
+            <a href="series.html">
+                <div class="box box2">
+                    <h2>Series</h2>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "header") {
+                x.className += " responsive";
+            } else {
+                x.className = "header";
+            }
+        }
+    </script>
+</body>
+
+</html>

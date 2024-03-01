@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="icon" href="../img/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../style/nav.css">
+    <link rel="stylesheet" href="../style/contact.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="../index.html" id="logo">&lt;CP&gt; ··· {CS}</a>
+        </div>
+        <div class="item-page">
+            Contact
+        </div>
+        <div class="menu-bars" onclick="openmenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <nav id="menu">
+            <ul class="main-menu">
+                <li><span class="page">01</span><a href="../index.html">Home</a></li>
+                <li><span class="page">02</span><a href="../page/about.html">About</a></li>
+                <li><span class="page">03</span><a href="../page/work.html">Work</a>
+                </li>
+                <li><span class="page">04</span><a href="../page/experience.html">Experience</a></li>
+                <li><span class="page">05</span><a href="../page/contact.html"><span
+                            class="still-page">Contact</span></a></li>
+            </ul>
+            <div class="menu-close" onclick="closemenu()">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </nav>
+    </header>
+
+    <section class="contact-page">
+        <div class="img-profile">
+            <img src="../img/myImg.jpg" alt="my-face-profile">
+            <div class="contact-info">
+                <p>Email : Chisanupong.p@kkumail.com</p>
+                <p>Tel : 0903400052</p>
+                <a href="https://www.facebook.com/chisanupong.pinthong/" class="fa-brands fa-facebook" target="_blank"></a>
+                <a href="https://www.instagram.com/cx.eith_/" class="fa-brands fa-instagram" target="_blank"></a>
+                <a href="https://goo.gl/maps/1Ys6GWz2Ta5HM2MJ9" class="fa-solid fa-map-location-dot" target="_blank"></a>
+                <a href="#input-form"class="fa-regular fa-envelope"></a>
+            </div>
+        </div>
+        
+        <div class="form-contact">
+            <form action="" id="input-form">
+                Firstname : <br>
+                <input type="text" required><br>
+                Lastname : <br>
+                <input type="text" required><br>
+                Email : <br>
+                <input type="email" required><br>
+                Phone : <br>
+                <input type="tel" required><br>
+                <input type="submit" value="Submit" class="submit">
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <i class="fa-solid fa-copyright"></i>&nbsp;2022 Chisanupong Pinthong | All Rights Reserved.
+    </footer>
+
+    <script src="../scripts/myscript.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+.about-page {
+    position: relative;
+}
+
+.content-1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.content-1 h1 {
+    color: white;
+    font-size: 2.75rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.content-1 p {
+    color: white;
+    font-size: 1.5rem;
+    text-align: right;
+    font-weight: 200;
+}
+
+.chevron-1 {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    transition: .5s;
+}
+
+.chevron-1 a{
+    color: #fff;
+    font-size: 3rem;
+}
+
+.chevron-1:hover{
+    top: 87%;
+}
+
+.personal {
+    width: 80%;
+    background-color: #fff;
+    margin: 0 auto;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-bottom: 5%;
+    background-color: #EDF0F2;
+    border-radius: 5px;
+}
+.personal h1{
+    font-size: 4rem;
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+div.wrapper{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.personal .box {
+    margin-bottom: 5%;
+}
+.personal .box  h2{
+    width: 80%;
+    margin: 0 10%;
+    font-size: 2rem;
+    font-weight: 500;
+    border-bottom: 1px solid black;
+}
+.personal .box p{
+    width: 80%;
+    margin: 0 10%;
+    align-items: center;
+    font-size: 1.75rem;
+    font-weight: 300;
+}
+
+.box img {
+    width: 10%;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+p span.qa {
+    font-weight: 500;
+    color: #187498;
+}
+
+.gn {
+    color: #36AE7C;
+}
+.rd {
+    color: #EB5353;
+}
+
+.personal-2 p {
+    text-indent: 10%;
+}
+
+.scroll-top {
+    bottom: 0;
+}
+@media screen and (max-width:1024px) {
+    div.wrapper{
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    .content-1 h1 {
+        font-size: 2rem;
+    }
+    .content-1 p {
+        font-size: 1rem;
+    }
+    .personal h1 {
+        font-size: 2rem;
+    }
+    .personal .box  h2 {
+        font-size: 1.5rem;
+    }
+    .personal .box p {
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .content-1 h1 {
+        font-size: 1.5rem;
+    }
+    .content-1 p {
+        font-size: 0.75rem;
+    }
+    .personal h1 {
+        font-size: 1.5rem;
+    }
+    .personal .box  h2 {
+        font-size: 1.25rem;
+    }
+    .personal .box p {
+        font-size: 1rem;
+    }
+}

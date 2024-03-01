@@ -1,0 +1,147 @@
+.work-page {
+    display: grid;
+    grid-template-columns: auto;
+    width: 100%;
+    margin-top: 15%;
+}
+
+.box {
+    display: flex;
+    flex: 2;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-bottom: 10%;
+    justify-content: center;
+}
+
+.box a {
+    text-align: center;
+    width: fit-content;
+    transition: .5s;
+}
+
+.box a:hover {
+    transform: scale(1.15);
+}
+
+.detail-right {
+    width: 30%;
+    margin-left: 5%;
+}
+
+.box h1 {
+    color: #fff;
+    font-size: 3rem;
+    width: 100%;
+    height: auto;
+}
+
+.box p {
+    width: 65%;
+    height: auto;
+    max-width: 550px;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.box img {
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    margin: 0 auto;
+    object-fit: contain;
+}
+
+.detail-right ul li {
+    color: #fff;
+    margin-left: 5%;
+    font-size: 1.15rem;
+}
+
+.container {
+    display: none;
+}
+
+.container h1 {
+    position: relative;
+    margin-top: 30%;
+    color: #000;
+    text-align: center;
+    background-color: #fff;
+}
+
+.btn-dowload {
+    text-decoration: #fff;
+    color: white;
+    padding-top: 20px;
+}
+
+.btn-dowload a {
+    text-decoration: #fff;
+    color: white;
+    padding: 6px;
+    text-decoration: none;
+    font-size: 1.65rem;
+    font-weight: 400;
+    background-color: #fff;
+    background: linear-gradient(to left, #7C0A02 50%, #B22222 50%) right;
+    background-size: 250%;
+    border-radius: 5px;
+    transition: 0.5s ease-in-out background;
+}
+
+.btn-dowload a:hover {
+    background-position: left;
+}
+
+@media screen and (max-width: 1024px) {
+    .work-page {
+        margin-top: 20%;
+    }
+
+    .detail-right {
+        width: 100%;
+        margin: 0 25%;
+        max-width: 400px;
+    }
+
+    .box {
+        flex-wrap: wrap;
+    }
+
+    .box h1 {
+        font-size: 2rem;
+    }
+
+    .box img {
+        width: 95%;
+        max-width: 650px;
+    }
+
+    .container {
+        display: block;
+    }
+
+    .box a:hover {
+        transform: scale(1.05);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .box img {
+        width: 95%;
+        max-width: 450px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .box img {
+        width: 95%;
+        max-width: 350px;
+    }
+
+    .box {
+        padding-bottom: 15%;
+        border-bottom: 2px solid white;
+    }
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab02</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        header, footer, section, article {
+            border: 1px solid gray;
+            margin: 0; 
+            margin-bottom: 15px; 
+            padding: 8px;
+            background-color: white;
+        }
+        header, footer {
+            color: white; 
+            background-color: #00614C; 
+            margin-bottom: 5px;
+
+        }
+        section {
+            background-color: #CBF6ED;
+        }
+        nav ul {
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li{
+            display: inline;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Assignment#2</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>Menu1</li>
+            <li>Menu2</li>
+            <li>Menu3</li>
+        </ul>
+    </nav>
+
+    <section>
+        <h3>HTML5</h3>
+        <article>
+            <h4>What is html5 (video)</h4>
+            <video width="400" controls>
+                <source src="video_for_ass2.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+        </article>
+        <article> 
+            <h4>Image</h4>
+            <aside style="float: left; margin-right: 60px;">
+                <img src="image_for_ass2.jpg" alt="HTML5" width="600">
+            </aside>
+            <h4>Canvas</h4>
+            <canvas id="myCanvas" width="200" height="100" style="border: 1px solid #000000;">
+                Your browser does not support the HTML5 canvas tag.
+            </canvas>
+        </article>
+    </section>
+
+    <footer>
+        <p>&copy; 2015 WDT. ALL rights reserved.</p>
+    </footer>
+
+    <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.fillStyle = "#008023";
+        ctx.fillRect(0,0,200,100);
+    </script>
+</body>
+</html>

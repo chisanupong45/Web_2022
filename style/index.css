@@ -1,0 +1,72 @@
+.home-page {
+    display: flex;
+    align-items: center;
+}
+.home-text{
+    width: 100%;
+    position: relative;
+    left: 13%;
+    color: white;
+}
+
+.text-1 {
+    font-size: 3.3rem;
+    font-weight: 500;
+    margin-bottom: 2%;
+}
+
+.text-1 span {
+    background: linear-gradient(rgba(0, 0, 0, 0) 60%, #0F4C81 40%);
+}
+
+.text-2 {
+    font-size: 1.65rem;
+    font-weight: 300;
+    margin-bottom: 5%;
+}
+
+.myFace {
+    width: 80%;
+    margin-left: 20%;
+    height: auto;
+    
+}
+
+.myFace img {
+    width: 50%;
+    min-width: 300px;
+    height: auto;
+    min-height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px white;
+}
+
+.btn-1 {
+    padding: 0.5rem 1rem;
+    color: #1B262C;
+    text-decoration: none;
+    font-size: 1.65rem; 
+    font-weight: 500;
+    background-color: #fff;
+    background: linear-gradient(to left, #ED6663 50%, #FFA372 50%) right;
+    background-size: 200%;
+    border-radius: 5px;
+    transition: 0.5s ease-out;
+}
+
+.btn-1:hover {
+    background-position: left;
+}
+
+@media screen and (max-width:1024px){
+    .myFace {
+        display: none;
+    }
+
+    .home-text {
+        width: 85%;
+        left: 0;
+        transform: translate(10%, 10%);
+    }
+}

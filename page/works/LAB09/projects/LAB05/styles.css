@@ -1,0 +1,283 @@
+/* * Star symbol or :root */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Class Selector */
+.header {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
+/* Contextual Selector */
+.header nav{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 18px 100px 18px 100px;
+    text-align: center;
+    background: #2472FC;
+    /* Gradient */
+    background: linear-gradient(#3562F2, #2472FC);
+}
+
+/* Contextual Selector */
+nav ul li{
+    display: inline;
+    list-style: none;
+}
+/* Contextual Selector */
+nav ul li a {
+    font-size: 27px;
+    margin: 20px 40px;
+    color: white;
+    /* Transition */
+    transition: 0.5s all ease-out;
+}
+
+/* Contextual Selector,  Pseudo class*/
+.header a:hover {
+    padding: 15px 20px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+/* Class Selector */
+.img1 {
+    background: url("image/bg1.jpg");
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    filter: blur(3px);
+}
+
+/* Class Selector */
+.bg {
+    display: flex; 
+}
+
+/* Class Selector */
+.home {
+    /* RGBA Colors */
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    /* Shadow Effects */
+    box-shadow: 25px 25px 5px #ffffff;
+    border-radius: 30px;
+}
+
+/* Contextual Selector */
+.home img {
+    padding: 20px;
+    max-width:100%;
+    max-height: 350px;
+    width: auto;
+    height: 30%;
+    border-radius: 30px;
+}
+
+/* Element Selector */
+h1 {
+    font-size: 2.5em;
+}
+
+/* Class Selector, Contextual Selector */
+.home .button {
+    border: 0;
+    /* Gradient */
+    background: #f4791f;
+    background: linear-gradient(#6631D5, #4552E8);
+    color: white;
+    padding: 10px 0px;
+    margin-left: 40%;
+    margin-right: 43%;
+    border-radius: 15px;
+    font-size: 25px;
+    display: block;
+}
+
+/* Class Selector, Pseudo class */
+.button:hover{
+    /* Gradient */
+    background: linear-gradient(#4552E8, #6631D5);
+}
+
+/* page01 */
+
+/* Class Selector */
+.two{
+    top: 25%;
+    width: 60%;
+    left: 20%;
+    text-align: left;
+    padding: 30px 0px 30px 100px;
+    /* Multiple columns */
+    column-count: auto;
+    column-width: 30rem;
+}
+
+/* Class Selector, Contextual Selector*/
+.two ol li{
+    font-size: 1.5rem;
+    padding: 30px;
+}
+
+/* Class Selector, Contextual Selector, Pseudo class*/
+.two ol a:link {
+    color: white;
+}
+
+/* Class Selector, Grouping selector
+, Pseudo class*/
+.backhome:link, .backhome:visited{
+    color: red;
+}
+
+/* Class Selector, Contextual Selector
+, Pseudo class*/
+.two ol a:hover {
+    text-decoration: underline;
+}
+
+/* Class Selector, Contextual Selector
+, Pseudo class*/
+.two ol a:visited {
+    color: white;
+}
+
+/* Class Selector, Contextual Selector */
+.two p {
+    font-size: 10px;
+}
+
+/* Element Selector */
+h2 {
+    font-size: 40px;
+    font-weight: bolder;
+    text-align: center;
+    padding: 6vh;
+    background-color: white;
+    border-radius: 60px;
+}
+
+/* Class Selector */
+.content {
+    text-align: center;
+    /* Gradient */
+    background: #727A9A;
+    background: linear-gradient(#8BC1E2, #9DB0D6
+    , #AF9FCA, #C08DBE);
+}
+
+/* Class Selector , Contextual Selector*/
+.content img{
+    max-width:100%;
+    max-height: 350px;
+    width: auto;
+    height: 30%;
+    border-radius: 60px;
+}
+
+/* X^=Y Selector */
+div[class^="txt-content"] {
+    display: inline-block;
+    max-width: 60%;
+    margin: 2vh;
+    padding: 5vh;
+    background-color: white;
+    border-radius: 60px;
+    /* Shadow Effects */
+    box-shadow: 10px 10px 30px rgb(108, 107, 107);
+}
+
+/* Class Selector */
+.c1 {
+    margin-top: 4vh;
+}
+
+/* Class Selector ,Contextual Selector */
+.txt-content p{
+    line-height: 40px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 20px; 
+    text-indent: 50px;  
+}
+
+/* Class Selector ,Contextual Selector */
+.txt-content ul {
+    display: block;
+}
+
+/* Class Selector ,Contextual Selector , Grouping selector */
+.txt-content ul p, .txt-content ul li{
+    text-align: left;
+    font-size: 20px;
+    max-width: 100%;
+    margin-left: 10%;
+}
+
+/* Class Selector */
+.c9 {
+    padding-bottom: 10%;
+}
+
+/* Element Selector */
+main {
+    position: relative;
+}
+
+/* Class Selector */
+.backtotop {
+    height: 100%;
+}
+
+/* Class Selector */
+.scroll-top {
+    position: absolute; 
+    top: 80vh; 
+    bottom: 3rem; 
+    right: 2rem; 
+}
+ 
+/* Class Selector */
+.scroll-top__link {
+    position: sticky; 
+    padding:1rem;
+    background-color: blue;
+    color: white;
+    font-weight: bolder;
+    border-radius: 10px;
+    opacity:0.3;
+    top: 90vh;
+}
+
+/* Class Selector ,Pseudo class*/
+.scroll-top__link:hover {
+    opacity: 0.8;
+}
+
+/* Pseudo element */
+.txt-content::first-line{
+    /* RGBA Colors */
+    color: rgb(191, 105, 120);
+}

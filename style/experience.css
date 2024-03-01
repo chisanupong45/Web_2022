@@ -1,0 +1,81 @@
+.experience-page {
+    position: relative;
+}
+
+.container {
+    display: flex;
+    gap: 2%;
+    width: 100%;
+    height: auto;
+    top: 50%;
+    padding: 12% 10%;
+}
+
+.card {
+    background-color: #100F0F;
+    padding: 3%;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.card-1 {
+    background-color: #36AE7C;
+}
+
+.card-2 {
+    background-color: #EB5353;
+}
+
+.card-3 {
+    background-color: #4D96FF;
+}
+
+.card h1, .card ul li ,.card p{
+    color: #fff;
+}
+
+.card h1 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.card ul {
+    margin-left: 1.5rem;
+    list-style:circle;
+}
+.card ul li, .card p {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+@media screen and (max-width:1024px){
+    .container {
+        padding-top: 20%;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        margin-bottom: 3%;
+    }
+}
+
+@media screen and (max-width:768px){
+    .card h1 {
+        font-size: 2rem;
+    }
+    .card ul li, .card p {
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (max-width:576px){
+    .container {
+        padding-top: 30%;
+    }
+}
+
+@media screen and (max-width:375px){
+    .container {
+        padding-top: 40%;
+    }
+}

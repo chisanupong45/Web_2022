@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+html {
+    font-size: calc(60% + 0.6vmin);
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 11px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+}
+
+section {
+    min-height: 100vh;
+}
+
+body {
+    background: linear-gradient(to right, #040404, #000000, #656565);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+    min-height: 100vh;
+    overflow: overlay;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+nav {
+    width: 100%;
+    height: 100%;
+    top: -100vh;
+    left: 0;
+    position: fixed;
+    background: #fff;
+    transition: 0.75s;
+    z-index: 2;
+}
+
+nav ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style-type: none;
+    min-width: 370px;
+}
+
+nav ul li {
+    margin: 2rem 0;
+}
+
+nav ul li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 3rem;
+    font-weight: 300;
+    transition: 0.75s;
+    border-bottom: 1px solid transparent;
+}
+
+nav ul li a:hover {
+    letter-spacing: 0.25rem;
+    border-bottom-color: #000;
+}
+
+.menu-bars,
+.menu-close {
+    position: absolute;
+    top: 3%;
+    right: 7%;
+    color: #fff;
+    font-size: 2.5rem;
+    transition: 0.75s;
+    z-index: 1;
+}
+
+.menu-bars {
+    position: fixed;
+    padding: 0 0.75rem;
+    border-radius: 50px;
+}
+
+.menu-close {
+    color: #000;
+    padding: 0 1rem;
+    border-radius: 50px;
+}
+
+.menu-bars:hover,
+.menu-close:hover {
+    cursor: pointer;
+}
+
+.menu-bars:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.menu-close:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.logo {
+    position: absolute;
+    top: 3%;
+    left: 7%;
+    font-size: 2.5rem;
+    z-index: 3;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0 0.25rem;
+    border-radius: 10px;
+    transition: 0.75s;
+}
+
+.main-menu li span.page {
+    font-size: 1.5rem;
+    font-weight: 100;
+    padding: 0 2.5rem;
+}
+
+.main-menu li a span.still-page {
+    font-weight: 800;
+}
+
+.item-page {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 4.5%;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+footer {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: auto;
+    min-height: 5vh;
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    position: relative;
+}
+
+.backtotop {
+    height: 100%;
+}
+
+.scroll-top {
+    position: absolute;
+    top: 80vh;
+    bottom: 3rem;
+    right: 7%;
+}
+
+.scroll-top__link {
+    font-size: 2.5rem;
+    position: sticky;
+    color: white;
+    font-weight: 600;
+    opacity: 0.6;
+    top: 90vh;
+    transition: 0.3s;
+}
+
+.scroll-top__link:hover {
+    opacity: 1;
+}
+
+@media screen and (max-width: 1024px) {
+    .item-page {
+        opacity: 0;
+    }
+}

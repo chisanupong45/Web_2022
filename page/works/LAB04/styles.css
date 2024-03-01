@@ -1,0 +1,122 @@
+/* Star symbol or :root */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Element Selector */
+body {
+    background-image: url(image/background.jpg);
+    font-family: sans-serif;
+}
+
+/* Element Selector */
+section {
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    justify-content: center;  
+}
+
+/* Element Selector */
+h1 {
+    margin: 50px;
+    padding: 20px;
+    text-align: center;
+    font-size: 40px;
+    background-color: white;
+    border-radius: 30px;
+}
+
+/* Element Selector */
+h2 {
+    margin: 30px 30px 0px 30px;
+}
+
+/* Grouping selector */
+p , video{
+    margin: 0px 30px 10px 30px;
+    width: 280px;
+}
+
+/* Element Selector */
+a {
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Class Selector */
+.box {
+    display: flex;
+    margin: 30px;
+    padding: 10px;
+    border-radius: 20px;
+    width: 400px;
+    transition: width 2s;
+}
+
+/* Contextual Selector */
+a img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    border-radius: 20px;
+}
+
+/* ID Selector */
+#info {
+    visibility: hidden;
+}
+
+/* Pseudo class */
+a:link {
+    color: blue;
+}
+
+/* Pseudo class */
+a:visited {
+    color: rgb(65, 73, 111);
+}
+
+/* Pseudo class */
+a:hover {
+    color: red
+}
+
+/* Pseudo class */
+.one:hover{
+    width: 750px;
+    transform: scale(1.15);
+}
+
+/* Pseudo class , Contextual Selector*/
+.one:hover #info{
+    background-color: white;
+    border-radius: 20px;
+    visibility: visible;
+}
+
+/* Pseudo class */
+.two:hover {
+    width: 600px;
+    transform: scale(1.15);
+}
+
+/* Pseudo class , Contextual Selector*/
+.two:hover #info{
+    background-color: white;
+    border-radius: 20px;
+    visibility: visible;
+}
+
+/* Pseudo class */
+a:active {
+    color: pink;
+}
+
+/* Pseudo Element */
+h1::first-letter {
+    color: rgb(212, 21, 53);
+}

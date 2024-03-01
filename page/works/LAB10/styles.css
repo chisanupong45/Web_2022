@@ -1,0 +1,20 @@
+html {
+    scroll-behavior: smooth;
+}
+.navbar{
+    position: absolute;
+    width: 100%;
+    font-size: 1.25rem;
+    z-index: 1;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+.carousel-item img{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: auto;
+    max-height: 80vh;
+}

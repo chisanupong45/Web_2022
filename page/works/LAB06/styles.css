@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-image: url("image/bg2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Sarabun', sans-serif;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
+.header nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 18px 100px 18px 100px;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline;
+    list-style: none;
+}
+
+nav ul li a {
+    font-size: 27px;
+    margin: 20px 40px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border-bottom: 2px solid transparent;
+    transition: 0.5s all ease-out;
+}
+
+.header a:hover {
+    border-color: rgb(255, 255, 255);
+}
+
+.bg {
+    background-image: url("image/bg.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    filter: brightness(45%);
+}
+
+.bg.img1 {
+    min-height: 100vh;
+}
+
+.content h1 {
+    position: absolute;
+    font-size: 2.5em;
+    font-weight: 700;
+    color: white;
+    top: 40%;
+    left: 10%;
+    width: 30%;
+    padding: 20px;
+    text-align: center;
+    letter-spacing: 4px;
+    text-shadow: 25px 25px 5px black;
+}
+
+.content .card {
+    align-items: center;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10%;
+    width: 50%;
+    position: absolute;
+    top: 20%;
+    left: 45%;
+}
+
+.card h2 {
+    color: rgb(0, 0, 0);
+    background-color: white;
+    border-radius: 5px;
+    padding: 3px 6px;
+    position: absolute;
+    bottom: 7%;
+    right: 10%;
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 1.7px;
+}
+
+div.card .box {
+    width: 100%;
+    height: 60vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    border-radius: 25px;
+    cursor: pointer;
+    overflow: hidden;
+    margin-bottom: 10%;
+}
+
+.box1 {
+    background-image: url("https://images.unsplash.com/photo-1440404653325-ab127d49abc1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fG1vdmllfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+}
+
+.box2 {
+    background-image: url("https://images.unsplash.com/photo-1512070679279-8988d32161be?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8bW92aWV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60");
+}
+
+.card .box {
+    transition: 0.8s;
+}
+
+.card .box:hover {
+    transition: 0.8s all;
+    transform: translateY(-25px);
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+/* page movies */
+section {
+    background-image: url("image/bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+.backhome {
+    color: red;
+}
+
+.content .back {
+    position: absolute;
+    color: white;
+    top: 10%;
+    left: 5%;
+    padding: 20px;
+    text-align: center;
+    z-index: 1;
+}
+
+.content .card.container {
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-column-gap: 30px;
+    grid-row-gap: 6px;
+    width: 80%;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+
+.movie1 {
+    background-image: url("https://pbs.twimg.com/media/FTe6Z_MVEAArAVK?format=jpg&name=medium");
+}
+
+.movie2 {
+    background-image: url("https://cdn.majorcineplex.com/uploads/content/images/20220623153213_289405097_2172884746204021_7005803386714344149_n.jpeg");
+}
+
+.movie3 {
+    background-image: url("https://upload.wikimedia.org/wikipedia/en/9/92/Emergency_Declaration.jpg");
+}
+
+.movie4 {
+    background-image: url("https://magarila.com/wp-content/uploads/2022/07/%E2%80%98Carter-Poster.jpeg");
+}
+
+.movie5 {
+    background-image: url("https://cdn.majorcineplex.com/uploads/content/images/20220412112134_new%20poster%20dr%20strange%202.jpg");
+}
+
+.movie6 {
+    background-image: url("https://pbs.twimg.com/media/FV3e3kOXgAIa4iT?format=jpg&name=900x900");
+}
+
+.movie7 {
+    background-image: url("https://i0.wp.com/bloody-disgusting.com/wp-content/uploads/2022/07/PREY-poster.jpeg?resize=740%2C1096&ssl=1");
+}
+
+.movie8 {
+    background-image: url("https://m.media-amazon.com/images/M/MV5BNWNiZDc3NWUtNmQ5ZS00MTI0LWFjNGQtZGUwZDlmZmU0N2QyXkEyXkFqcGdeQXVyNTIxNTMxMjE@._V1_.jpg");
+}
+
+/* page series */
+.serie1 {
+    background-image: url("https://sportshub.cbsistatic.com/i/2022/07/25/b87bfa41-24d7-4041-8bbe-e219c41aba52/the-sandman-netflix-poster.jpg?auto=webp&width=1500&height=2222&crop=0.675:1,smart");
+}
+
+.serie2 {
+    background-image: url("https://f.ptcdn.info/606/077/000/rdob5yrz7K53Ksq9XnX-o.jpg");
+}
+
+.serie3 {
+    background-image: url("https://magarila.com/wp-content/uploads/2022/07/Extraordinary-Attorney-Woo-Poster-scaled.jpeg");
+}
+
+.serie4 {
+    background-image: url("https://pbs.twimg.com/media/FR9bRkKUYAAzUpx?format=jpg&name=medium");
+}
+
+.serie5 {
+    background-image: url("http://c.min.ms/m/b/98/98082/ffb7172c.jpg");
+}
+
+.serie6 {
+    background-image: url("https://assets-prd.ignimgs.com/2022/07/28/lockekey-poster2-1658980029738.jpg");
+}
+
+.serie7 {
+    background-image: url("https://photos.hancinema.net/photos/photo1447831.jpg");
+}
+
+.serie8 {
+    background-image: url("https://www.brighttv.co.th/wp-content/uploads/2022/07/stranger-things-4-poster-1652364986162.jpeg");
+}
+
+/* overlay */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #E0EAFC;
+    background: -webkit-linear-gradient(to left, #CFDEF3, #E0EAFC);
+    background: linear-gradient(to left, #CFDEF3, #E0EAFC);
+    width: 100%;
+    height: 100%;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    transition: 0.1s;
+}
+
+.box:hover .overlay {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    transition: 0.5s ease;
+    overflow: auto;
+}
+
+.overlay iframe {
+    display: block;
+    height: 30%;
+    margin: auto;
+    margin-top: 5%;
+}
+
+.text p,
+.text h3 {
+    color: rgb(0, 0, 0);
+    font-size: 1.2em;
+    padding: 5%;
+    text-indent: 5%;
+}
+
+.header .icon {
+    display: none;
+}
+
+@media screen and (max-width: 900px) {
+    .header li {
+        display: none;
+    }
+
+    .header a.icon {
+        display: block;
+        color: white;
+        top: 10%;
+        left: 90%;
+        font-size: 150%;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+
+    .header.responsive .icon {
+        position: absolute;
+        top: 10%;
+        left: 90%;
+        
+    }
+
+    .header.responsive li {
+        display: block;
+        text-align: right;
+    }
+}
